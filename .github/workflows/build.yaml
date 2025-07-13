@@ -19,7 +19,7 @@ jobs:
         name: NickelMenu
         path: KoboRoot.tgz
     - name: upload binaries to release
-      uses: softprops/action-gh-release@v1.1.0
+      uses: softprops/action-gh-release@v1
       if: ${{startsWith(github.ref, 'refs/tags/') }}
       with:
         files: KoboRoot.tgz
